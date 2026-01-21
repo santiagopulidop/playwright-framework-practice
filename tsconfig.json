@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* 1. Configuración Básica */
+    "target": "es2016",               /* Versión de JS a la que se compilará */
+    "module": "node16",             /* Sistema de módulos (Node.js usa CommonJS) */
+    "moduleResolution": "node16",       /* Cómo encontrar módulos (estilo Node) */
+    
+    /* 2. Rutas y Directorios */
+    "outDir": "./dist",               /* Dónde poner los archivos compilados (opcional si usamos ts-node) */
+    "rootDir": "./src",               /* Dónde está nuestro código fuente */
+    
+    /* 3. Interoperabilidad y Librerías */
+    "lib": ["dom", "dom.iterable", "esnext"], /* Librerías disponibles (DOM es vital para Playwright) */
+    "esModuleInterop": true,          /* Permite importar módulos CommonJS como si fueran ES6 */
+    "resolveJsonModule": true,        /* Permite importar archivos .json en el código */
+    
+    /* 4. Calidad del Código (Strict Mode) */
+    "strict": true,                   /* Activa todas las comprobaciones estrictas de tipos */
+    "noImplicitAny": true,            /* Error si TS no puede inferir un tipo */
+    "skipLibCheck": true,             /* Salta verificación de tipos en librerías externas (ahorra tiempo) */
+    "forceConsistentCasingInFileNames": true /* Asegura consistencia en nombres de archivo (Windows/Mac/Linux) */
+  },
+  "include": [
+    "src/**/*"                        /* Incluir todo lo que esté en src */
+  ],
+  "exclude": [
+    "node_modules"                    /* Ignorar carpeta de dependencias */
+  ]
+}
